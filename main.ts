@@ -1,7 +1,7 @@
 // main.ts
 
 import { Plugin, TFile, TAbstractFile, App, PluginSettingTab, Setting } from 'obsidian';
-import { fetchAndSummarizeNoFiles } from 'podcast-takeaways';
+import {fetchAndSummarizeNoFiles, fetchAndSummarize} from "podcast-takeaways";
 
 interface SolomonSettings {
 	openAiApiKey: string;
@@ -49,10 +49,11 @@ export default class SolomonPlugin extends Plugin {
 
 	async fetchAndAppendTakeaways() {
 		for (const url of this.settings.podcastUrls) {
-			const takeaway = await fetchAndSummarizeNoFiles(
+			const takeaway = await fetchAndSummarize(
 				this.settings.openAiApiKey,
 				this.settings.personalInfo,
 				url,
+				false,
 				this.settings.ffmpegPath
 			);
 
