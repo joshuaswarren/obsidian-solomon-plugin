@@ -1,12 +1,12 @@
 {
 	"name": "obsidian-solomon-plugin",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "Obsidian plugin to monitor one or more podcast feeds for new episodes and use GPT to generate a key takeaway from each new episode.",
 	"main": "main.ts",
 	"scripts": {
 		"build:esbuild": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
-		"build": "esbuild --bundle main.ts --platform=node --target=es2020 --outdir=. --format=cjs --external:obsidian --external:fluent-ffmpeg",
-		"watch": "esbuild --bundle main.ts --platform=node --target=es2020 --outdir=. --format=cjs --external:obsidian --external:fluent-ffmpeg --watch"
+		"build": "esbuild --bundle main.ts --platform=node --target=es2020 --outdir=. --format=cjs --external:obsidian --define:process.env.FLUENTFFMPEG_COV=false",
+		"watch": "esbuild --bundle main.ts --platform=node --target=es2020 --outdir=. --format=cjs --external:obsidian --define:process.env.FLUENTFFMPEG_COV=false --watch"
 	},
 	"keywords": [
 		"obsidian",
@@ -33,6 +33,7 @@
 	},
 	"dependencies": {
 		"@types/codemirror": "^5.60.7",
+		"fluent-ffmpeg": "^2.1.2",
 		"podcast-takeaways": "^0.3.0"
 	}
 }
