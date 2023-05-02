@@ -1,7 +1,7 @@
 {
 	"id": "obsidian-solomon-plugin",
 	"name": "Solomon",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"minAppVersion": "0.15.0",
 	"description": "Monitor one or more podcast feeds for new episodes and use GPT to generate a key takeaway from each new episode.",
 	"author": "Joshua Warren",
