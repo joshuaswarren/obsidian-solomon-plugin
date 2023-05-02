@@ -1,9 +1,9 @@
 {
 	"id": "obsidian-solomon-plugin",
 	"name": "Solomon",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"minAppVersion": "0.15.0",
-	"description": "This is a sample plugin for Obsidian. This plugin demonstrates some of the capabilities of the Obsidian API.",
+	"description": "Monitor one or more podcast feeds for new episodes and use GPT to generate a key takeaway from each new episode.",
 	"author": "Joshua Warren",
 	"authorUrl": "http://joshuawarren.omg.lol",
 	"fundingUrl": "http://joshuawarren.omg.lol",
