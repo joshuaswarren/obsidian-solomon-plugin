@@ -1,6 +1,6 @@
 {
 	"name": "obsidian-solomon-plugin",
-	"version": "0.1.4",
+	"version": "0.1.5",
 	"description": "Obsidian plugin to monitor one or more podcast feeds for new episodes and use GPT to generate a key takeaway from each new episode.",
 	"main": "main.ts",
 	"scripts": {
@@ -34,6 +34,6 @@
 	"dependencies": {
 		"@types/codemirror": "^5.60.7",
 		"fluent-ffmpeg": "^2.1.2",
-		"podcast-takeaways": "^0.4.0"
+		"podcast-takeaways": "^0.4.1"
 	}
 }
